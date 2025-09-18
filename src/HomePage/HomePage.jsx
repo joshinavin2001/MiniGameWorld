@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 const HomePage = () => {
   return (
     <>
@@ -14,7 +15,15 @@ const HomePage = () => {
             <a href="#">Contact</a>
         </div>
     </nav>
+        
 
+        <section>
+          <div>
+          
+           <img className='h-44 w-44' src="./homePageImg/dice_Game.jpg" alt="Dice Game" />
+          {/* <img src="/homePageImg/dice_Game.jpg" alt="Dice Game" className="w-64 h-auto" /> */}
+          </div>
+        </section>
     </div>
     </>
  

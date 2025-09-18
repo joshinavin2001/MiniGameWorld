@@ -7,4 +7,6 @@ export default defineConfig({
   plugins: [react(),
     tailwindcss(),
   ],
+  // base : '/MiniGameWorld'
+  base: process.env.NODE_ENV === "production" ? "/MiniGameWorld/" : "/",
 })
