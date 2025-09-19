@@ -5,6 +5,7 @@ import InGame from './DiceGame/InGame'
 // import Instructions from './DiceGame/Instructions'
 import Task from './DiceGame/Task'
 import HomePage from './HomePage/HomePage'
+import Bubble from './BubbleGame/Bubble'
 
 const App = () => {
   const [playDice,SetPlayDice]=useState(false)
@@ -28,14 +29,18 @@ const App = () => {
     // </div>
 
 
+    // <div>
+    //   {playDice ? (
+    //     <InGame />
+    //   ) : playTicTac ? (
+    //     <TicTacInGame />
+    //   ) : (
+    //     <HomePage toogleDice={dicePlay} toogleTicTac={ticTacPlay} />
+    //   )}
+    // </div>
+
     <div>
-      {playDice ? (
-        <InGame />
-      ) : playTicTac ? (
-        <TicTacInGame />
-      ) : (
-        <HomePage toogleDice={dicePlay} toogleTicTac={ticTacPlay} />
-      )}
+      <Bubble />
     </div>
 
 
